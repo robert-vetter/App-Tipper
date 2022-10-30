@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/item2"
+        android:title="Game Description"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/item3"
+        android:title="Notifications"
+        app:showAsAction="never">
+
+        <menu>
+            <item android:id="@+id/notificationsub1"
+                android:title="Never"/>
+            <item android:id="@+id/notificationsub2"
+                android:title="Monthly"/>
+        </menu>
+    </item>
+    <item android:id="@+id/contact"
+        android:title="Further information"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/privacypolicy"
+        android:title="Privacy Policy"
+        app:showAsAction="never"/>
+
+
+</menu>

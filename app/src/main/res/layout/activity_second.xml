@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".SecondActivity">
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:background="@color/purple_500"
+        android:padding="10sp"
+        android:onClick="pausePushed"
+        android:text="PAUSE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/scoreLabel"
+        app:layout_constraintStart_toStartOf="@+id/scoreLabel"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:gravity="left"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/mistakeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Mistakes: 0 / 5"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="right"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/TapToStartLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Tap to start"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/red"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/redcircle" />
+
+        <ImageView
+            android:id="@+id/green"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/greencircle" />
+
+        <ImageView
+            android:id="@+id/green1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/greencircle" />
+        <ImageView
+            android:id="@+id/red1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/redcircle" />
+
+
+
+
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

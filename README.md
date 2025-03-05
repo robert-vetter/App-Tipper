@@ -1,0 +1,1 @@
+This is a simple Android game developed using Android Studio. In this game, red and green circles fall from the top of the screen, and the player's objective is to tap on the green circles while avoiding the red ones.​ It is my first app and I coded it when I was 14.
